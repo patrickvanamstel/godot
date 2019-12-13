@@ -1,6 +1,6 @@
 extends Area2D
 
-onready var anim_player : AnimationPlayer = get_node("AnimationPlayer")
+onready var anim_player : AnimationPlayer = $AnimationPlayer
 
 func _read() -> void :
 	anim_player.play("bouncing")

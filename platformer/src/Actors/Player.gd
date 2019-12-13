@@ -13,7 +13,6 @@ func _on_EnemyDetector_body_entered(body: PhysicsBody2D) -> void:
 	queue_free()
 	return
 
-
 func _physics_process(delta: float) -> void:
 	var is_jump_interrupted := Input.is_action_just_released("jump") and _velocity.y < 0.0
 	var direction: = get_direction()
